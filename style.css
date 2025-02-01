@@ -30,7 +30,7 @@ body {
 }
 
 #p1 {
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 1px;
 }
 
@@ -90,6 +90,27 @@ input.form-control:focus {
     border: 1px solid rgba(255, 200, 18, 0.968);
 }
 
+/* Userform */
+
+/* New styles for plant results */
+#userForm h2 {
+    color: rgb(241, 231, 201);
+    font-size: 35px;
+}
+
+#userForm p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+/* Hide the form initially */
+.hidden {
+    display: none;
+}
+
+
+
 /* Submit Button */
 
 #submitButton{
@@ -98,6 +119,22 @@ input.form-control:focus {
     color: rgb(241, 231, 201);
 
 }
+
+/* Loader Spinner */
+#loadingSpinner {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border: 8px solid rgba(255, 255, 255, 0.2);
+    border-top: 8px solid rgb(255, 200, 18);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
 
 /* Animations */
 @keyframes fadeIn {
@@ -110,7 +147,8 @@ input.form-control:focus {
     to { transform: translateY(20px); }
 }
 
-/* Hide the form initially */
-.hidden {
-    display: none;
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
+

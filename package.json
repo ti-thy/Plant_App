@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-project-1-(plant-app)",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ti-thy/Plant_App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ti-thy/Plant_App/issues"
+  },
+  "homepage": "https://github.com/ti-thy/Plant_App#readme",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}
